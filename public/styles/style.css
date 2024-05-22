@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+.head, .options, .figures, .propertis, .sheets, #titleDiagram, #share, #switchTheme{
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+.darkTheme{
+    background-color: #484043;
+    border-color: #524E50;
+}
+.head {
+    position: top;
+    display: block;
+    height: 8%;
+}
+.options {
+    display: block;
+    height: 12%;
+}
+.contenedor, .centro{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.centro{
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+}
+.figures{
+    width: 20%;
+    height: 100%;
+}
+.canvas {  
+    background-color: #232223;
+    width: 100%;
+    height: 90%;
+    position: center;
+}
+.propertis{
+    width: 20%;
+    height: 100%;
+}
+.sheets {
+    width: 100%;
+    height: 10%;
+}
+#titleDiagram, #share, #switchTheme{
+    border-width: 0px;
+    width: 15%;
+    height: 100%;
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.leftContainer{
+float:right;
+width: 20%;
+height: 100%;
+}
+#switchTheme{
+    display: inline;
+    width: 10%;
+    float: right;
+    
+}
+#share{
+    display: inline;
+    width: 90%;
+    font-size: 100%;
+    background-color: #E6A83C;
+}
