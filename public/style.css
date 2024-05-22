@@ -1,0 +1,66 @@
+/*Reset de valores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*Centrar contenido*/
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*Modo obscuro*/
+  body.dark {
+    background-color: #333;
+    color: black;
+    
+  }
+  /*Modo claro*/
+  body.light {
+    background-color: #fff;
+    color: #000;
+  }
+  /*Contenedor del canvas*/
+  #container {
+    position: relative;
+  }
+  /*Centrar canvas*/
+  canvas {
+    cursor: pointer;
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid;
+  }
+  /*Modo obscuro Canvas*/
+  body.dark canvas {
+    background-color: #000;
+    border-color: #fff;
+  }
+  /*Modo claro canvas*/
+  body.light canvas {
+    background-color: #fff;
+    border-color: #000;
+  }
+  /*Temporar (Para saber en donde esta el mousexd*/
+  #output {
+    position: absolute;
+    font-size: 14px;
+  }
+  /*Posicion del contenedor de los botones*/
+  #ContBtn {
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    left: 45%;
+    z-index: 10;
+    align-items: center;
+  }
+  /*estilo botones :v*/
+  #ContBtn button {
+    margin-right: 10px;
+    padding: 5px 10px;
+  }
+  
