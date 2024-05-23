@@ -5,28 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/styles/style.css" />
+    <link id="lightMode" rel="stylesheet" href="public/styles/lightMode.css" />
+    <link id="darkMode" rel="stylesheet" href="public/styles/darkMode.css" disabled />
+    <script src="src/switchMode.js" defer></script>
     <title>DrawingApp</title>
 </head>
 
 <body>
-    <header class="head darkTheme" >
-        <button type="button" id="titleDiagram" class="darkTheme" >Diagrama sin título</button>
-        <div class="leftContainer">
-            <button type="button" class="darkTheme" id="share">Compartir</button>
-            <button type="button" class="darkTheme" id="switchTheme">O</button>
-        </div>        
+    <header id="head" class="section">
+        <button type="button" id="titleDiagram" class="darkTheme">Diagrama sin título</button>
+        <div id="leftContainer">
+            <button type="button" id="share">Compartir</button>
+            <button type="button" id="switchMode">O</button>
+        </div>
     </header>
-    <nav class="options darkTheme" >opciones</nav>
-    <div class="contenedor">
-        <section class="figures darkTheme" >figuras</section>
-        <div class="centro">
-            <main class="canvas">
+    <nav id="options" class="section">
+        <div class="darkTheme">
+            <button type="button" id="archivo">archivo</button>
+            <button type="button" id="editar">Editar</button>
+            <button type="button" id="vista">vista</button>
+            <button type="button" id="capa">capa</button>
+            <button type="button" id="objeto">objeto</button>
+        </div>
+    </nav>
+    <div class="contenedorVertical">
+        <section id="figures" class="section">
+            <div class="item section">
+                <button type="button" class="itemHeader" id="general">general</button>
+                <div class="itemContent section">
+                    contenido
+                </div>
+            </div>
+            <div class="item section">
+                <button type="button" class="itemHeader" id="dibujo">dibujo</button>
+                <div class="itemContent section">
+                    contenido
+                </div>
+            </div>
+            <div class="item section">
+                <button type="button" class="itemHeader" id="flechas">flechas</button>
+                <div class="itemContent section">
+                    contenido
+                </div>
+            </div>
+            <div class="item section">
+                <button type="button" class="itemHeader" id="flujo">flujo</button>
+                <div class="itemContent section">
+                    contenido
+                </div>
+            </div>
+            <div class="item section">
+                <button type="button" class="itemHeader" id="UML">UML</button>
+                <div class="itemContent section">
+                    contenido
+                </div>
+            </div>
+
+
+
+        </section>
+        <div id="centro" class="contenedorVertical">
                 <canvas class="canvas"></canvas>
-            </main>
-            <footer class="sheets darkTheme" >hojas</footer>
+            <footer id="sheets" class="section">
+                <button type="button" id="SheetOptions">*</button>
+                <button type="button" id="sheet">pagina x</button>
+                <button type="button" id="sheetAdd">+</button>
+            </footer>
         </div>
 
-        <aside class="propertis darkTheme" >propiedades</aside>
+        <aside id="propertis" class="section">
+            <div class="buttonPropertis">
+                <button type="button" id="Estilo">Estilo</button>
+                <button type="button" id="Texto">Texto</button>
+                <button type="button" id="Organizar">Organizar</button>
+            </div>
+        </aside>
 
     </div>
 

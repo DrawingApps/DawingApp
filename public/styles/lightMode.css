@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    background-color: #B4E8EA;
+}
+.section{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7DB1D7;
+}
+.canvas{
+    background-color: #FFFFFF;
+}
