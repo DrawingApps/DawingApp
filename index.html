@@ -30,42 +30,46 @@
     </nav>
     <div class="contenedorVertical">
         <section id="figures" class="section">
-            <div class="item section">
-                <button type="button" class="itemHeader" id="general">general</button>
-                <div class="itemContent section">
-                    contenido
+            <div class="itemSection">
+                <input type="checkbox" id="general" class="itemButton">
+                <label for="general" class="itemText section">General</label>
+                <div class="itemContent" id="generalContent">
+                    <p>mis dibujos generales</p>
                 </div>
             </div>
-            <div class="item section">
-                <button type="button" class="itemHeader" id="dibujo">dibujo</button>
-                <div class="itemContent section">
-                    contenido
+            <div class="itemSection">
+                <input type="checkbox" id="dibujo" class="itemButton">
+                <label for="dibujo" class="itemText section">Dibujo</label>
+                <div class="itemContent">
+                    <p>mis dibujos</p>
                 </div>
             </div>
-            <div class="item section">
-                <button type="button" class="itemHeader" id="flechas">flechas</button>
-                <div class="itemContent section">
-                    contenido
+            <div class="itemSection">
+                <input type="checkbox" id="flechas" class="itemButton">
+                <label for="flechas" class="itemText section">Flechas</label>
+                <div class="itemContent">
+                    <p>mis flechas</p>
                 </div>
             </div>
-            <div class="item section">
-                <button type="button" class="itemHeader" id="flujo">flujo</button>
-                <div class="itemContent section">
-                    contenido
+            <div class="itemSection">
+                <input type="checkbox" id="flujo" class="itemButton">
+                <label for="flujo" class="itemText section">Diagrama de Flujo</label>
+                <div class="itemContent">
+                    <p>mis diagramas</p>
                 </div>
             </div>
-            <div class="item section">
-                <button type="button" class="itemHeader" id="UML">UML</button>
-                <div class="itemContent section">
-                    contenido
+            <div class="itemSection">
+                <input type="checkbox" id="UML" class="itemButton">
+                <label for="UML" class="itemText section">UML</label>
+                <div class="itemContent">
+                    <p>mis webos</p>
                 </div>
             </div>
-
 
 
         </section>
         <div id="centro" class="contenedorVertical">
-                <canvas class="canvas"></canvas>
+            <canvas class="canvas"></canvas>
             <footer id="sheets" class="section">
                 <button type="button" id="SheetOptions">*</button>
                 <button type="button" id="sheet">pagina x</button>
@@ -74,10 +78,25 @@
         </div>
 
         <aside id="propertis" class="section">
-            <div class="buttonPropertis">
-                <button type="button" id="Estilo">Estilo</button>
-                <button type="button" id="Texto">Texto</button>
-                <button type="button" id="Organizar">Organizar</button>
+            <input type="radio" name="si" id="estilo" class="itemButton">
+            <label for="estilo" class="textVertical section">Estilo</label>
+
+            <div class="contentVertical" id="estiloContent">
+                <p>Campos de estilo</p>
+            </div>
+
+            <input type="radio" name="si" id="texto" class="itemButton">
+            <label for="texto" class="textVertical section">Texto</label>
+
+            <div class="contentVertical" id="textoContent">
+                <p>Campos de texto</p>
+            </div>
+
+            <input type="radio" name="si" id="organizar" class="itemButton">
+            <label for="organizar" class="textVertical section">Organizar</label>
+
+            <div class="contentVertical" id="organizarContent">
+                <p>Campos de organizar</p>
             </div>
         </aside>
 

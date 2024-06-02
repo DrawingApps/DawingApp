@@ -1,69 +1,140 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-  }
-*{
     box-sizing: border-box;
-}  
+}
+
 #head {
     position: top;
     display: block;
     height: 8%;
 }
+
 #options {
     display: block;
     height: 12%;
 }
-.contenedorVertical{
+
+/* para ambos lados laterales */
+.contenedorVertical {
     width: 100%;
     height: 80%;
     display: flex;
 }
-#centro{
+
+#centro {
     width: 60%;
     height: 100%;
     flex-direction: column;
 }
-#figures{
+
+#figures {
     width: 20%;
     height: 100%;
+    overflow: auto;
 }
-.canvas {  
+
+.canvas {
     width: 100%;
     height: 90%;
     top: 0%;
 }
-#propertis{
+
+#propertis {
     width: 20%;
     height: 100%;
 }
+
 #sheets {
     width: 100%;
     height: 10%;
 }
-#titleDiagram, #share, #switchTheme{
+
+#titleDiagram,
+#share {
     border-width: 0px;
     width: 15%;
     height: 100%;
     font-size: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#leftContainer{
-float:right;
-width: 20%;
-height: 100%;
+
+#leftContainer {
+    float: right;
+    width: 20%;
+    height: 100%;
 }
-#switchTheme{
+
+#switchTheme {
     display: inline;
     width: 10%;
-    float: right;    
+    float: right;
 }
-#share{
+
+#share {
     display: inline;
     width: 90%;
     font-size: 100%;
     background-color: #E6A83C;
     float: left;
+}
+
+/* menus desplegables contenedores de figuras */
+.itemSection {
+    width: 100%;
+    overflow: hidden;
+}
+
+.itemButton {
+    display: none;
+}
+
+.itemText {
+    display: block;
+    cursor: pointer;
+    height: 10vh;
+    font-size: 20px;
+    text-indent: 5%;
+}
+
+/* ocultamos el contenido por default  */
+.itemContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}
+
+/* al clickear lo mostramos  */
+.itemButton:checked~.itemContent {
+    max-height: 200px;
+}
+
+#propertis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 90%;
+}
+
+.textVertical {
+    cursor: pointer;
+    font-size: 20px;
+    text-indent: 5%;
+    grid-row: 1/2;
+}
+
+.contentVertical {
+    max-height: 0;
+    overflow: hidden;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+/* al clickear lo mostramos  */
+#estilo:checked~#estiloContent,
+#texto:checked~#textoContent,
+#organizar:checked~#organizarContent {
+    max-height: 100%;
 }
